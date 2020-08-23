@@ -1,0 +1,11 @@
+p {
+    font-size: x-large;
+}
+:host {
+    display: block;
+    background: whitesmoke;
+}
+:host(.active) {
+    display: block;
+    background-color: thistle;
+}

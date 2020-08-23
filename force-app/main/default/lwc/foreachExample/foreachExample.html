@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title = "For each example" icon-name="utility:bucket"> 
+      <ul>
+        <template for:each={contacts} for:item="contact" for:index="index">
+          <li key={contact.Id}>
+            {contact.Name}[{contact.Title}]
+          </li>
+        </template>
+      </ul>
+    </lightning-card>
+    <lightning-card title = "Iterator example" icon-name="utility:bucket">
+    <ul>
+        <template iterator:it={contacts}>
+          <li key={it.value.Id}>
+            <div if:true={it.first} class="list-first"></div>
+            {it.value.Name}, {it.value.Title}
+            <div if:true={it.last} class="list-last"></div>
+          </li>
+        </template>
+      </ul>
+    </lightning-card>
+</template>

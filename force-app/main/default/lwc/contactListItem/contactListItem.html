@@ -1,0 +1,13 @@
+<template>
+    <a href="#" onclick={selectHandler}>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item>
+                <img src={contact.statlwc__Picture__c}></img>
+                {contact.Picture__c}
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>{contact.Name}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </a>
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Slot Change Event example">
+        <c-container>
+            <c-child></c-child>
+            <template if:true={addOneMore}>
+                <c-child></c-child>
+            </template>
+            <template if:false={addOneMore}>
+                No child
+            </template>
+        </c-container>
+        <button onclick={addMore}>Add One more</button> 
+    </lightning-card>
+</template>

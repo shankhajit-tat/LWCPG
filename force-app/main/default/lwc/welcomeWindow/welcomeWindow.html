@@ -1,0 +1,17 @@
+<!-- @name: welcomeWindow @description: used to show only welcome message by Lightning Web Component @author: Santanu Pal @date: 10 FEB 2019 Copyright (c) 2019 -->
+ 
+<template>
+    <lightning-card title="Welcome My Friends">
+        <div class="messageClass">   
+            <lightning-layout>
+                <lightning-layout-item flexibility="auto" padding="around-small">  
+                        <div class="contentClass">
+                        {welcomeMessage} 
+                        </div>
+                        <br/>
+                        {welcomeMessageLabel}
+                </lightning-layout-item>
+            </lightning-layout>
+        </div> 
+    </lightning-card>     
+</template>

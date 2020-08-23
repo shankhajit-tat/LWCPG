@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="eventBubbleParentExample:Event Bubbling internal event">
+        <div onnotify={handleNotifyDomParent}>
+            <c-event-bubble-child onnotify={handleNotify}></c-event-bubble-child>
+        </div>
+    </lightning-card>
+</template>

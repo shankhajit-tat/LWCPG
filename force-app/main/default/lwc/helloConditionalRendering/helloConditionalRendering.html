@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title = "Conditional Rendering Example" icon-name="utility:bucket">
+        <lightning-button variant="brand" label="Toggle Template" title="Toggle Template" onclick={toggletemplate} class="slds-m-left_x-small"></lightning-button>
+        <div>
+            <template if:true={isTrueTemplate}>
+            This is the true template.
+            </template>
+            <template if:false={isTrueTemplate}>
+            This is the false template.
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title='ldsCreatRecord Component'>
+        <lightning-card title='Create Account Record with record form'>
+            <lightning-record-form object-api-name={accountObject}
+            fields={myFields}
+            onsuccess={handleAccountCreated}>
+            </lightning-record-form>
+        </lightning-card>
+        <lightning-card title='Create Account Record with a Custom Field Layout Using lightning-record-edit-form'>
+            <lightning-record-edit-form object-api-name={accountObject} onsuccess={handleAccountCreated} onerror={handleServerError}>
+                <lightning-messages></lightning-messages>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field field-name={nameField}></lightning-input-field>
+                        <lightning-input-field field-name={websiteField}></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <!-- More lightning-input-field components here -->
+                    </div>
+                 </div>
+                <lightning-button type="submit" variant="brand" label="Create Account"></lightning-button>
+            </lightning-record-edit-form>
+        </lightning-card>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <template if:true={contact}>
+        <p>{contact.name}</p>
+        <p>{contact.title}</p>
+    </template>
+    <template if:false={contact}>
+        <p>No contact data available.</p>
+    </template>
+    <template if:true={primitiveString}>
+        {primitiveString}
+    </template>
+    <template if:false={primitiveString}>
+        No primitive data available
+    </template>
+    <br />
+    <button onclick={updateContactName}><b>1</b> Update contact.name</button>
+    <br />
+    <button onclick={updateContactField}><b>2</b> Update contact field</button>
+    <br />
+    <button onclick={updatePrimitive}><b>2</b> Update primitive</button>
+</template>

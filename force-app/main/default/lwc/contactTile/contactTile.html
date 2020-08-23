@@ -1,0 +1,12 @@
+<template>
+    <template if:true={contact}>
+        <lightning-card>
+            <img src={contact.Picture} alt="Profile photo" />
+            <p>{contact.Name}</p>
+            <p>{contact.Title}</p>
+        </lightning-card>
+    </template>
+    <template if:false={contact}>
+        No data available.
+    </template>
+</template>
