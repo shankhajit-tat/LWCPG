@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Flow Screen">
+        <lightning-input type='text' data-id='firstname'  label='First Name' value={firstName} onchange={handleChange}></lightning-input>
+        <lightning-input type='text' data-id='lastname'  label='Last Name' value={lastName} onchange={handleChange}></lightning-input>
+        <lightning-input type='email' data-id='email'  label='Email' value={email} onchange={handleChange}></lightning-input>
+        <lightning-button variant='success' onclick='{validateAndProceed}' label='Proceed' title="Proceed"></lightning-button>
+    </lightning-card>
+</template>

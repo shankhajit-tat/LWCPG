@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>Documentation</aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		This aura component opens a record in Console using WorkSpace API
+	</aura:example>
+</aura:documentation>
