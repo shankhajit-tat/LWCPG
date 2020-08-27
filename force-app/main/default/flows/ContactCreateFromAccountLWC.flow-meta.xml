@@ -8,6 +8,9 @@
         <locationY>293</locationY>
         <actionName>statlwc:openRecordAction</actionName>
         <actionType>component</actionType>
+        <connector>
+            <targetReference>send_notification_on_contact_creation</targetReference>
+        </connector>
         <inputParameters>
             <name>sobject</name>
             <value>
@@ -18,6 +21,45 @@
             <name>recordId</name>
             <value>
                 <elementReference>varContactId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>send_notification_on_contact_creation</name>
+        <label>send notification on contact creation</label>
+        <locationX>220</locationX>
+        <locationY>293</locationY>
+        <actionName>HtmlEmailAction</actionName>
+        <actionType>apex</actionType>
+        <inputParameters>
+            <name>htmlBody</name>
+            <value>
+                <stringValue>Sample email body</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyToEmail</name>
+            <value>
+                <stringValue>shankhajit.tat.sfdc@gmail.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderName</name>
+            <value>
+                <stringValue>resourceful-panda flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendToEmail</name>
+            <value>
+                <stringValue>shankhajit.tat.sfdc@gmail.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Sample email Subject</stringValue>
             </value>
         </inputParameters>
         <storeOutputAutomatically>true</storeOutputAutomatically>
