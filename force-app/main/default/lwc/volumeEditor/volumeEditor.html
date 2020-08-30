@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-p-around_xx-small">
+        <lightning-slider
+        data-key="param-volume"
+        label="Volume"
+        step="10"
+        value={volume}
+        onchange={handleChange}>
+        </lightning-slider>
+    </div>
+    <div class="slds-p-around_xx-small">
+        <lightning-combobox
+            name="secondaryEmail"
+            label="Secondary Email"
+            value={secondaryEmail}
+            placeholder="Select Secondary Email"
+            options={options}
+            onchange={handleChangeReference} >
+
+        </lightning-combobox>
+    </div>
+</template>

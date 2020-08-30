@@ -1,5 +1,6 @@
 <template>
     <lightning-card title="Flow Screen">
+        <lightning-formatted-text value={accountId}></lightning-formatted-text>
         <lightning-input type='text' data-id='firstname'  label='First Name' value={firstName} onchange={handleChange}></lightning-input>
         <lightning-input type='text' data-id='lastname'  label='Last Name' value={lastName} onchange={handleChange}></lightning-input>
         <lightning-input type='email' data-id='email'  label='Email' value={email} onchange={handleChange}></lightning-input>
