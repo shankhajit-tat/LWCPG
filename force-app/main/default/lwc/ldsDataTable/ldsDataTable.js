@@ -11,7 +11,7 @@ import ID_FIELD from '@salesforce/schema/Contact.Id';
 
 //lightning data table using getListUi (Beta) wire
 import { getListUi } from 'lightning/uiListApi';
-import ACCOUNT_OBJECT from '@salesforce/schema/Account';
+import ACCOUNT_OBJECT from 'contactCreator/node_modules/@salesforce/schema/Account';
 import NAME_FIELD from '@salesforce/schema/Account.Name';
 
 const COLS = [

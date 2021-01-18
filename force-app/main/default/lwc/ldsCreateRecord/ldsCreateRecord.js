@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-import ACCOUNT_OBJECT from '@salesforce/schema/Account';
+import ACCOUNT_OBJECT from 'contactCreator/node_modules/@salesforce/schema/Account';
 import ACC_NAME_FLD from '@salesforce/schema/Account.Name';
 import ACC_NUM_FLD from '@salesforce/schema/Account.AccountNumber';
 import ACC_WEBSITE_FLD from '@salesforce/schema/Account.Website';
